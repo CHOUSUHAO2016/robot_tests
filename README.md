@@ -3,8 +3,8 @@
 Base on below information to create the test cases.
 
 URL: https://www.barco.com/en/clicksshare/aupport/warranty-info
-Test Scope: The Orange rectangle below 
 
+Test Scope :  
 As below plan, I described all my strategy. The test cases are Manual test cases and Automation test cases. 
 And then, choose some Automation cases to create scripts and run in robot framework. 
 
