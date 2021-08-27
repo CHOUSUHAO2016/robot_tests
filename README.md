@@ -91,28 +91,30 @@ properties:
 Enter **ice-box**: a module that manages a store of uniquely-named, immutable
 directories, and makes it easy to create new ones.
 
-## Usage
+## Case1 Input no charactors, check result as
 
 Let's say we have a build system that takes a directory and puts its contents
 into a tarball. What might a script look like to do that, so we could invoke it
 using `node make-tar.js some-directory/`?
 
 ```js
-var icebox = require('ice-box')()
-var fs = require('fs')
-var path = require('path')
-var tar = require('tar-fs')
-
-var src = process.argv[2]
-
-icebox(function (dst, done) {
-  tar
-    .pack(src)
-    .pipe(fs.createWriteStream(path.join(dst, 'result.tar')))
-    .on('finish', done)
-}, function (err, finalDir) {
-  console.log(finalDir)
-})
+def getEmptyC():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":""}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Please enter a valid serial number")):
+        return "Please enter a valid serial number."
+    else:
+        return 0 
 ```
 
 Running `node make-tar.js some-directory/` will output
