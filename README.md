@@ -1,4 +1,4 @@
-# ice-box
+# Check your warranty
 
 > easy, one-off immutable directories!
 
