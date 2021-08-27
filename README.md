@@ -9,6 +9,49 @@ On the filesystem, this is hard to achieve. Filesystems are all about side
 effects! Consider creating a directory as a function, and then creating a file
 within it:
 
+Case1
+Check web device
+    check web device
+
+Case2
+Get web dataEmptyC
+    getEmptyC
+
+Case3
+Input 1 charactor
+    get_web_data1
+
+Case4
+Input 2 charactors
+    get_web_data2
+
+Case5
+Input 3 charactors
+    get_web_data3
+
+Case6
+Input 4 charactors
+    get_web_data4
+
+Case6
+Input 5 charactors
+    get_web_data5
+
+Case7
+Input 6 charactors
+    get_web_data6
+
+Case8
+Input 10 charactors
+    get_web_data10
+
+Case9
+Input 11 charactors
+    get_web_data11
+
+Case10
+Input BeyondBorder1024 charactors
+
 1. First, please unzip robot_tests.7z.
 2. Go to " cd C:\Users\carl_chou\Documents\Barco\1\robot " this path.
 3. Open a CMD, and excute the robot script as below.
