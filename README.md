@@ -210,7 +210,7 @@ def get_web_data1():
 ```
 
 
-## Case4 : Input "5" charactors 
+## Case5 : Input "5" charactors 
 
 Front page will show "Minimum 6 characters required".if only input 5 charactor.
 
@@ -285,7 +285,7 @@ def get_web_data10():
 ```
 
 
-## Case7 : Input "11" charactors 
+## Case8 : Input "11" charactors 
 
 Front page will show "We are sorry, there is no warranty information available about this product, if you need more information about this, please.
 
@@ -310,7 +310,7 @@ def get_web_data11():
 ```
 
 
-## Case7 : Input "1024" charactors (Beyond the border) 
+## Case9 : Input "1024" charactors (Beyond the border) 
 
 Front page will show "Please enter a valid serial number.
 
