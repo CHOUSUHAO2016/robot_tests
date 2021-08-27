@@ -1,21 +1,13 @@
 # Check your warranty
 
-> easy, one-off immutable directories!
-
-[Pure functions](https://en.m.wikipedia.org/wiki/Pure_function) are a powerful concept. They allow you to, given an input,
-produce the same deterministic output, *without side effects*.
-
-On the filesystem, this is hard to achieve. Filesystems are all about side
-effects! Consider creating a directory as a function, and then creating a file
-within it:
-
 Base on below information to create the test cases.
 
 URL: https://www.barco.com/en/clicksshare/aupport/warranty-info
 Test Scope: The Orange rectangle below 
 Please describe your strategy in your plan.
 
-
+As below plan, I described all my strategy. The test cases are Manual test cases and Automation test cases. 
+And then, choose some Automation cases to create scripts and run in robot framework. 
 
 # Design search box test cases
 1. The search content is empty, verify how the system handles it
@@ -319,7 +311,7 @@ def get_web_data11():
 ```
 
 
-## Case7 : Input "1024" charactors to test the border 
+## Case7 : Input "1024" charactors (Beyond the border) 
 
 Front page will show "Please enter a valid serial number.
 
