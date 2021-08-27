@@ -17,48 +17,71 @@ Please describe your strategy in your plan.
 
 
 
-Case1
-Check web device
-    check web device
+# Design search box test cases
+1. The search content is empty, verify how the system handles it
+2. The search content is blank, check how the system handles it
+3. Boundary value verification, within and outside the allowed string length, verify the processing of the system
+4. Enter a very long string, whether the system will capture the allowed length to verify the result
+5. After entering a string of legal length, add a space to verify that the result of the system is correct
+6. Add spaces, commas, and TAB between multiple keywords to verify that the result of the system is correct
+7. Verify each legal input and the result is correct
+8. Whether to support copying, pasting, editing and other operations of retrieved content
+9. Whether to support enter key search
+10. Enter the same content multiple times to check whether the search results of the system are consistent
+11. Special characters, translated characters, HTML, scripts, etc. need to be processed
+12. Enter sensitive words, prompt the user to have no permission, etc.
+13. Does the input support shortcut key operations, etc.
+14. Only enter the allowed string length, etc.
+15. Whether the input key is correct and jumps correctly
+16. Is the search history displayed below
+17. Does the search content have association function?
+18. Is it possible to input numbers, English, Chinese
+19. Is it possible to mix input numbers, English, and Chinese?
+20. Input pinyin can also search
+21. Whether the content of voice search matches
+22. Unable to search when the internet is disconnected
+23. You can choose to take a picture or select a picture from the album when searching for pictures
+24. If you select a picture from the album to search, is there a limit to the size of the picture, and what is the maximum?
+25. There are camera pictures on the side of the search box for easy picture search
+26. Click Clear History, whether the search box will clear the history
+27. Can identify the content in the picture
+28. Click Search to display the search interface
 
-Case2
-Get web dataEmptyC
-    getEmptyC
+# Interface test
+1. Check if the UI is displayed correctly and the layout is reasonable
+2. Are there any typos
+3. Is the layout displayed in the search results beautiful?
+4. The checked results are keyed and the color of the keyed is brilliantly processed
+5. When the result data is huge, is the page layout of the page reasonable?
+6. Is the color matching of the interface correct?
 
-Case3
-Input 1 charactor
-    get_web_data1
 
-Case4
-Input 2 charactors
-    get_web_data2
 
-Case5
-Input 3 charactors
-    get_web_data3
+# Security test
+1. Disabling the script
+2. SQL injection, retrieval of SQL SELECT statements, etc.
+3. Retrieval of sensitive content is prohibited
+4. Search for special characters
+5. The deleted, encrypted, and authorized data are not allowed to be found out
+6. Is there a safety design control
 
-Case6
-Input 4 charactors
-    get_web_data4
+# Compatibility test
+1. Multi-platform Windows Mac
+2. Mobile platform Android iOS
+3. Multi-browser Firefox, Chrome, IE, etc.
 
-Case6
-Input 5 charactors
-    get_web_data5
+# Performance test
+1. The time when the key of the search page was opened
+2. Time consumed to search for results
+3. The response time of search when the network is weak
+4. Response time when searching under different network speeds, such as 3G
 
-Case7
-Input 6 charactors
-    get_web_data6
+# Ease of use
+1. Has Lenovo function
+2. The degree of match between the search results and the search results
+3. Support photo search, voice search
 
-Case8
-Input 10 charactors
-    get_web_data10
 
-Case9
-Input 11 charactors
-    get_web_data11
-
-Case10
-Input BeyondBorder1024 charactors
 
 1. First, please unzip robot_tests.7z.
 2. Go to " cd C:\Users\carl_chou\Documents\Barco\1\robot " this path.
