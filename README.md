@@ -172,7 +172,7 @@ def get_web_data1():
 ```
 
 
-## Case2 : Input 2 charactors 
+## Case2 : Input "2" charactors 
 
 Make show page will show "Please enter a valid serial number".
 
