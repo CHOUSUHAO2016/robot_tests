@@ -93,34 +93,6 @@ $ cd C:\Users\carl_chou\Documents\Barco\1\robot
 $ robot robot_tests
 ```
 
-If this was part of a script you used in, say, a build process, you might run
-into some problems:
-
-1. your current directory is an implicit input; being in the wrong directory
-   will have unintended side effects.
-2. `mkdir foobar` is not
-   [idempotent](https://en.wikipedia.org/wiki/Idempotence): multiple
-   applications of it in the same directory yield different results (generally,
-   an error).
-3. it creates *global mutable state*. what if another not-quite-pure function
-   decided it wanted to use `foobar/quux` for a different purpose? Each script
-   can clobber and conflict with the other!
-4. the resultant folder can be modified between functions. If I ran `mkdir foo;
-   sleep 10; touch foo/quux` and, during those 10 seconds, another process did
-   `rm -rf foo`, the result would be different than if they hadn't.
-
-From this, we can say that a better solution would have the three inverse
-properties:
-
-1. the current directory should be irrelevant (that is, all paths should be
-   absolute).
-2. each application of a function should produce a brand new folder.
-3. each brand new folder should be unique named, to prevent conflicts.
-4. each brand new folder should have write permissions removed, so that its
-   contents are frozen.
-
-Enter **ice-box**: a module that manages a store of uniquely-named, immutable
-directories, and makes it easy to create new ones.
 
 ## Case0 : Input no any charactors as empty
 
