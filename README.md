@@ -10,7 +10,7 @@ effects! Consider creating a directory as a function, and then creating a file
 within it:
 
 ```sh
-$ mkdir foobar
+$ robot robot_tests
 
 $ touch foobar/quux
 ```
