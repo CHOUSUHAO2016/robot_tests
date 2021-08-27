@@ -149,7 +149,7 @@ def getEmptyC():
 
 ## Case1 : Input "1" charactor 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 1 charactor.
 
 ```python
 def get_web_data1():
@@ -174,7 +174,7 @@ def get_web_data1():
 
 ## Case2 : Input "2" charactors 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 2 charactor.
 
 ```python
 def get_web_data1():
@@ -199,7 +199,7 @@ def get_web_data1():
 
 ## Case3 : Input "3" charactors 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 3 charactor.
 
 ```python
 def get_web_data1():
@@ -224,7 +224,7 @@ def get_web_data1():
 
 ## Case4 : Input "4" charactors 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 4 charactor.
 
 ```python
 def get_web_data1():
@@ -249,7 +249,7 @@ def get_web_data1():
 
 ## Case4 : Input "5" charactors 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 5 charactor.
 
 ```python
 def get_web_data1():
@@ -274,7 +274,7 @@ def get_web_data1():
 
 ## Case6 : Input "6" charactors 
 
-Make show page will show "Please enter a valid serial number".
+# Front page will show "Minimum 6 characters required".if only input 6 charactor.
 
 ```python
 def get_web_data1():
