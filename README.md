@@ -9,6 +9,14 @@ On the filesystem, this is hard to achieve. Filesystems are all about side
 effects! Consider creating a directory as a function, and then creating a file
 within it:
 
+Base on below information to create the test cases.
+
+URL: https://www.barco.com/en/clicksshare/aupport/warranty-info
+Test Scope: The Orange rectangle below 
+Please describe your strategy in your plan.
+
+
+
 Case1
 Check web device
     check web device
