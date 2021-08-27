@@ -122,7 +122,7 @@ properties:
 Enter **ice-box**: a module that manages a store of uniquely-named, immutable
 directories, and makes it easy to create new ones.
 
-## Case1 : Input no any charactors as empty
+## Case0 : Input no any charactors as empty
 
 Make show page will show "Please enter a valid serial number".
 
@@ -142,6 +142,156 @@ def getEmptyC():
         print('Server error')
     if(html_data.find("Please enter a valid serial number")):
         return "Please enter a valid serial number."
+    else:
+        return 0 
+```
+
+
+## Case1 : Input 1 charactor 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"1"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
+    else:
+        return 0 
+```
+
+
+## Case2 : Input 2 charactors 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"11"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
+    else:
+        return 0 
+```
+
+
+## Case3 : Input 3 charactors 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"111"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
+    else:
+        return 0 
+```
+
+
+## Case4 : Input 4 charactors 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"1111"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
+    else:
+        return 0 
+```
+
+
+## Case4 : Input 5 charactors 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"11111"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
+    else:
+        return 0 
+```
+
+
+## Case6 : Input 6 charactors 
+
+Make show page will show "Please enter a valid serial number".
+
+```python
+def get_web_data1():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"111111"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Minimum 6 characters required")):
+        return "Please input 6 charactors at least."
     else:
         return 0 
 ```
