@@ -93,9 +93,7 @@ directories, and makes it easy to create new ones.
 
 ## Case1 : Input no any charactors as empty
 
-Let's say we have a build system that takes a directory and puts its contents
-into a tarball. What might a script look like to do that, so we could invoke it
-using `node make-tar.js some-directory/`?
+Make show page will show "Please enter a valid serial number".
 
 ```python
 def getEmptyC():
