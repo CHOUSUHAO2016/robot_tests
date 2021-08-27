@@ -147,7 +147,7 @@ def getEmptyC():
 ```
 
 
-## Case1 : Input " 1 " charactor 
+## Case1 : Input "1" charactor 
 
 Make show page will show "Please enter a valid serial number".
 
@@ -197,7 +197,7 @@ def get_web_data1():
 ```
 
 
-## Case3 : Input 3 charactors 
+## Case3 : Input "3" charactors 
 
 Make show page will show "Please enter a valid serial number".
 
@@ -222,7 +222,7 @@ def get_web_data1():
 ```
 
 
-## Case4 : Input 4 charactors 
+## Case4 : Input "4" charactors 
 
 Make show page will show "Please enter a valid serial number".
 
@@ -247,7 +247,7 @@ def get_web_data1():
 ```
 
 
-## Case4 : Input 5 charactors 
+## Case4 : Input "5" charactors 
 
 Make show page will show "Please enter a valid serial number".
 
@@ -272,7 +272,7 @@ def get_web_data1():
 ```
 
 
-## Case6 : Input 6 charactors 
+## Case6 : Input "6" charactors 
 
 Make show page will show "Please enter a valid serial number".
 
