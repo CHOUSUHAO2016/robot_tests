@@ -91,7 +91,7 @@ properties:
 Enter **ice-box**: a module that manages a store of uniquely-named, immutable
 directories, and makes it easy to create new ones.
 
-## Case1 Input no any charactors as empty
+## Case1 : Input no any charactors as empty
 
 Let's say we have a build system that takes a directory and puts its contents
 into a tarball. What might a script look like to do that, so we could invoke it
