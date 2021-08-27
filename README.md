@@ -9,9 +9,9 @@ On the filesystem, this is hard to achieve. Filesystems are all about side
 effects! Consider creating a directory as a function, and then creating a file
 within it:
 
-1.First, please unzip robot_tests.7z.
-2.Go to " cd C:\Users\carl_chou\Documents\Barco\1\robot " this path.
-3.Open a CMD, and excute the robot script as below.
+1. First, please unzip robot_tests.7z.
+2. Go to " cd C:\Users\carl_chou\Documents\Barco\1\robot " this path.
+3. Open a CMD, and excute the robot script as below.
 
 ```sh
 $ cd C:\Users\carl_chou\Documents\Barco\1\robot
