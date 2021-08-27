@@ -91,13 +91,13 @@ properties:
 Enter **ice-box**: a module that manages a store of uniquely-named, immutable
 directories, and makes it easy to create new ones.
 
-## Case1 Input no charactors, check result as
+## Case1 Input no any charactors as empty
 
 Let's say we have a build system that takes a directory and puts its contents
 into a tarball. What might a script look like to do that, so we could invoke it
 using `node make-tar.js some-directory/`?
 
-```js
+```python
 def getEmptyC():
     header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
     data = {"SerialNumber":""}
