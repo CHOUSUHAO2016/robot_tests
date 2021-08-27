@@ -297,6 +297,84 @@ def get_web_data1():
 ```
 
 
+## Case7 : Input "10" charactors 
+
+Front page will show "Minimum 6 characters required".if only input 6 charactor.
+
+```python
+def get_web_data10():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"1111111111"}
+    uri = "https://www.barco.com/services/website/en/WarrantyLister/GetWarrantyResult"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("R9849880")):
+        return "R9849880"
+    else:
+        return 0   
+```
+
+
+## Case7 : Input "11" charactors 
+
+Front page will show "We are sorry, there is no warranty information available about this product, if you need more information about this, please.
+
+```python
+def get_web_data11():
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":"11111111111"}
+    uri = "https://www.barco.com/services/website/en/WarrantyLister/GetWarrantyResult"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("We are sorry, there is no warranty information available about this product, if you need more information about this, please")):
+        return "We are sorry, there is no warranty information available about this product, if you need more information about this, please"
+    else:
+        return 0   
+```
+
+
+## Case7 : Input "1024" charactors to test the border 
+
+Front page will show "Please enter a valid serial number.
+
+```python
+def get_web_BeyondBorder1024():
+    str = ""
+    for i in range(1024): 
+        str = str+"1"
+    print(str)    
+    header = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:51.0) Gecko/20100101 Firefox/51.0'}
+    data = {"SerialNumber":f"{str}"}
+    uri = "https://www.barco.com/en/clickshare/support/warranty-info"
+    rs = requests.session()
+    res = rs.post(uri, data=data, headers=header, timeout=300)
+    html_data = ''
+    if res.status_code == 200:
+        print('OK')
+        html_data = res.text
+        print(html_data)
+    else:
+        print('Server error')
+    if(html_data.find("Please enter a valid serial number")):
+        return "Please enter a valid serial number"
+    else:
+        return "fail"
+```
+
 
 ## Acknowledgments
 
