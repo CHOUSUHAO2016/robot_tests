@@ -75,7 +75,7 @@ And then, choose some Automation cases to create scripts and run in robot framew
 
 # Automation Test - Start to run robot script
 1. First, please unzip robot_tests.7z.
-2. Go to " cd C:\Users\carl_chou\Documents\Barco\1\robot " this path.
+2. Go to robot folder inside.
 3. Open a CMD, and excute the robot script as below.
 
 ```sh
