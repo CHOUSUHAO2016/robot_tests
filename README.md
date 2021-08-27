@@ -147,7 +147,7 @@ def getEmptyC():
 ```
 
 
-## Case1 : Input 1 charactor 
+## Case1 : Input " 1 " charactor 
 
 Make show page will show "Please enter a valid serial number".
 
