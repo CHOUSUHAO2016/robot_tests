@@ -19,32 +19,22 @@ And then, choose some Automation cases to create scripts and run in robot framew
 8. Whether to support copying, pasting, editing and other operations of retrieved content
 9. Whether to support enter key search
 10. Enter the same content multiple times to check whether the search results of the system are consistent
-11. Special characters, translated characters, HTML, scripts, etc. need to be processed
-12. Enter sensitive words, prompt the user to have no permission, etc.
-13. Does the input support shortcut key operations, etc.
-14. Only enter the allowed string length, etc.
-15. Whether the input key is correct and jumps correctly
-16. Is the search history displayed below
-17. Does the search content have association function?
-18. Is it possible to input numbers, English, Chinese
-19. Is it possible to mix input numbers, English, and Chinese?
-20. Input pinyin can also search
-21. Whether the content of voice search matches
-22. Unable to search when the internet is disconnected
-23. You can choose to take a picture or select a picture from the album when searching for pictures
-24. If you select a picture from the album to search, is there a limit to the size of the picture, and what is the maximum?
-25. There are camera pictures on the side of the search box for easy picture search
-26. Click Clear History, whether the search box will clear the history
-27. Can identify the content in the picture
-28. Click Search to display the search interface
+11. Enter sensitive words, prompt the user to have no permission, etc.
+12. Only enter the allowed string length, etc.
+13. Whether the input key is correct and jumps correctly
+14. Is the search history displayed below
+15. Does the search content have association function?
+16. Is it possible to mix input numbers, English, and Chinese?
+17. Unable to search when the internet is disconnected
+18. Click Clear History, whether the search box will clear the history
+19. Click Search to display the search interface
 
 # Interface test
 1. Check if the UI is displayed correctly and the layout is reasonable
 2. Are there any typos
 3. Is the layout displayed in the search results beautiful?
-4. The checked results are keyed and the color of the keyed is brilliantly processed
-5. When the result data is huge, is the page layout of the page reasonable?
-6. Is the color matching of the interface correct?
+4. When the result data is huge, is the page layout of the page reasonable?
+5. Is the color matching of the interface correct?
 
 
 
@@ -66,11 +56,6 @@ And then, choose some Automation cases to create scripts and run in robot framew
 2. Time consumed to search for results
 3. The response time of search when the network is weak
 4. Response time when searching under different network speeds, such as 3G
-
-# Ease of use
-1. Has Lenovo function
-2. The degree of match between the search results and the search results
-3. Support photo search, voice search
 
 
 # Automation Test - Start to run robot script
