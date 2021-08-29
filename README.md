@@ -322,22 +322,3 @@ def get_web_BeyondBorder1024():
     else:
         return "fail"
 ```
-
-
-## Acknowledgments
-
-I was inspired by looking at how many codebases will use a many-step build
-process that involves transforming directories (source dir -> build dir ->
-packaged dir -> windows installer program), but suffer from side effects and
-shared global state. If build steps were interrupted the series of output
-directories would be inconsistent, hard to track down, etc. I really wanted to
-be able to make build and release pipelines that were as easy to reason about as
-UNIX pipes.
-
-## See Also
-
-- [`noffle/common-readme`](https://github.com/noffle/common-readme)
-
-## License
-
-ISC
