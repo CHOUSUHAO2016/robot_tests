@@ -55,7 +55,7 @@ And then, choose some Automation cases to create scripts and run in robot framew
 1. The time when the key of the search page was opened
 2. Time consumed to search for results
 3. The response time of search when the network is weak
-4. Response time when searching under different network speeds, such as 3G
+4. Response time when searching under different network speeds, such as 3G,4G,5G network
 
 
 # Automation Test - Start to run robot script
