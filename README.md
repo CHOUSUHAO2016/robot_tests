@@ -238,8 +238,8 @@ def get_web_data1():
         print(html_data)
     else:
         print('Server error')
-    if(html_data.find("Minimum 6 characters required")):
-        return "Please input 6 charactors at least."
+    if(html_data.find("We are sorry, there is no warranty information available about this product, if you need more information about this, please")):
+        return "We are sorry, there is no warranty information available about this product, if you need more information about this, please."
     else:
         return 0 
 ```
